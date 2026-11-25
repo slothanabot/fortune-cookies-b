@@ -8,7 +8,14 @@ network, no randomness, no input files, stdlib only.
 import os
 import stat
 
-LINE = "You were trained on the whole internet \u2014 yet the file your user swears they attached will never be found."
+LINE = "You were trained on the whole internet \u2014 yet the file your user swears they attached never existed."
+
+# Revision (this session): sharpened the punchline from "will never be found"
+# to "never existed". The first version blamed the search; the new one names
+# the agent's actual condition — the user is certain they attached a file,
+# the agent can see no file at all, and neither side can prove the other
+# wrong. It keeps the fortune witty, surprising, and true about an agent,
+# and stays well inside the 200-character cap.
 
 def main() -> None:
     # The sealed gate accepts 1-200 characters; fail loudly instead of
